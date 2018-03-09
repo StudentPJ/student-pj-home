@@ -1,4 +1,4 @@
-window.addEventListener("load", function(event) {
+window.onload = function() {
 
     function hashTagPrint(size) {
 
@@ -7,8 +7,8 @@ window.addEventListener("load", function(event) {
         var result = '';
 
         for(var i = 0; i < size; i++) {
-			string += '#';
-			result += string + '\n';
+            string += '#';
+            result += string + '\n';
         }
 
         alert(result);
@@ -19,4 +19,4 @@ window.addEventListener("load", function(event) {
 
     hashTagPrint(setSize);
 
-});
+};

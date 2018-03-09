@@ -1,4 +1,4 @@
-window.addEventListener("load", function(event) {
+window.onload = function() {
 
     function hashTagPrint(height, width) {
 
@@ -36,4 +36,4 @@ window.addEventListener("load", function(event) {
 
     hashTagPrint(setChessBoardHeight, setChessBoardWidth);
 
-});
+};
