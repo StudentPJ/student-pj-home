@@ -2,33 +2,27 @@ window.onload = function() {
 
     function hashTagPrint(height, width) {
 
-        var string1     = '',
-            newLine     = '\n',
-            emptyString = '  ',
-            hash        = '#';
+        var resultString = '',
+            newLine      = '\n',
+            emptyString  = '  ',
+            hash         = '#';
 
         for (var i = 0; i < height; i++) {
 
             for (var j = 0; j < width; j++) {
 
                 if(i % 2) {
-
-                    if(j !== width - 1) {
-                        string1 += emptyString + hash
-                    } else {
-                        string1 += emptyString
-                    }
-
+                    resultString += emptyString + hash
                 } else {
-                    string1 += hash + emptyString;
+                    resultString += hash + emptyString;
                 }
 
             }
 
-            string1 += newLine;
+            resultString += newLine;
         }
 
-        alert(string1);
+        alert(resultString);
     }
 
     var setChessBoardHeight = prompt('Укажите высоту шахмотной доски', 5);
