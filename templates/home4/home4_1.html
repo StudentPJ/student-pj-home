@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student PJ Home works</title>
+
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="projector-home">
+
+<main class="main-container">
+    <h1>Homework - 4 - task 1</h1>
+    <p>Homework description: <a target="_blanks" href="../../info/dz_4.pdf">link</a></p>
+    <img src="../../img/home4/home4_1.png">
+    <p style="font-size: 25px;">
+	    В начале выполнения данного скрипта нициализируется глобальная область видимости<br>
+	    Ищем ключевые слова "function" и "var"<br>
+	    Создается переменная "createLogger" которой присваивается тело функции "createLogger"<br>
+	    Создаются переменные "logger1" и "logger2" которым присваивается undefined<br>
+	    Далее в строке 8 и 9 происходит присвоение переменным "logger1" и "logger2" функции "createLogger()" с разными параметрами в виде строки.<br>
+	    В строках 10, 11, 12, 13 приисходит почередный вызов функции "logger1()" и "logger2()" которые свою очередь вызывают функцию "createLogger" с разными параметрами.<br>
+	    Далее в строке 1 происходит инициализация функции "createLogger()".<br>
+	    Создается локальная область видимости. Ищем ключевые слова "function" и "var".<br>
+	    Создается переменная "message" и "messagePrefix" в которые записывается undefined.<br>
+	    Далее после фызова этой функции в 10 и 12 строкав в переменную "message" записывается строка "Hello world", а после вызова этой же фунции в в строках 11 и 13 в переменную "message" записывается строка "Hi there".<br>
+	    В строке 2 в переменную "messagePrefix" записывается строка "LOG: "<br>
+	    В строке 3 приисходит возврат анонимной функции без параметров которая в свою очередь выводит в консоль сообщение вида "LOG: Hello world" или "LOG: Hi there" в зависимости от переданных парметров в функцию.<br>
+	    В данномслучае для адекватной работы анонимной функции ей необходима перемення "messagePrefix" и так как есть ссылка на эту анонимную функцию из за этого область видимости функции "createLogger" не удаляется и происходит замыкание.<br>
+	    Результат работы данного кода:<br>
+	    "LOG: Hello world"<br>
+	    "LOG: Hi there"<br>
+	    "LOG: Hello world"<br>
+	    "LOG: Hi there"<br>
+    </p>
+
+</main>
+
+</body>
+</html>
